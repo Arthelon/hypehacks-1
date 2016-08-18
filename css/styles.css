@@ -7,9 +7,23 @@ body {
 	color: #FF5C26;
 }
 
+p {
+	color: #191919;
+	letter-spacing: 0.03em;
+	font-size: 18px;
+}
+
 a {
 	text-decoration: none;
 	color: white;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 40px;
 }
 
 button {
@@ -116,16 +130,20 @@ section {
 	min-height: 400px;
 	width: 100%;
 	background-color: white;
-  	/*padding: 4em 1em;*/
+  	padding: 1em 2em 3em 2em;
 }
 
 .alt-section {
 	background-color: #E6E8E6;
 }
 
+section#faq h3, section#faq p {
+	text-align: left;
+}
+
 /** Footer **/
 footer {
-	height: 150px;
+	height: 110px;
 	width: 100%;
 	bottom: 0;
 	display: flex;
