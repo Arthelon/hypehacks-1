@@ -1,12 +1,7 @@
 (function() {
 	var scrollSpeed = 400
 
-	function clearActiveNavs() {
-		$("#nav-links li").each(function() {
-			$(this).attr("class", "")
-		})
-	}
-
+	//Waypoints
 	$("section").each(function() {
 		var $this = $(this)
 		$this.waypoint({
@@ -17,7 +12,7 @@
 			}
 		})
 	})
-
+	
 	$("header").waypoint({
 		handler: function() {
 			clearActiveNavs()
@@ -35,4 +30,11 @@
 		var target = $(this).attr("href")
 		$(window).scrollTo($(target), scrollSpeed)
 	})
+
+	//Utils
+	function clearActiveNavs() {
+		$("#nav-links li").each(function() {
+			$(this).attr("class", "")
+		})
+	}
 })()
