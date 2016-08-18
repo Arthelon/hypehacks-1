@@ -2,6 +2,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: white;
 	line-height: 1.5;
+	font-size: 16px;
 	margin: 0;
 	color: #191919;
 }
@@ -16,6 +17,25 @@ footer {
 	bottom: 0;
 	display: block;
 	background-color: #F94D1D;
+}
+
+button {
+	background-color: #F24E18;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	display: block;
+	border: none;
+	font-size: 16px;
+	padding: 0.7em 1em;
+	font-weight: 500;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #BF3E13;
 }
 
 /** Nav **/
@@ -59,7 +79,7 @@ ul#nav-links {
 	height: 100%;
 }
 
-#nav-links li.active {
+#nav-links li.active, #nav-links li:hover {
 	background-color: #F28060;
 }
 
@@ -79,8 +99,13 @@ header {
 }
 
 header img {
-	margin: 7em auto;
+	margin: 5em auto 2em auto;
 	width: 60%;
+	display: block;
+}
+
+header button {
+	margin: 0 auto;
 	display: block;
 }
 
