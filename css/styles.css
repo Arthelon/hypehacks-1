@@ -1,7 +1,7 @@
 section {
 	display: block;
-	height: 300px;
-	width:100%;
+	min-height: 400px;
+	width: 100%;
 	background-color: white;
   	/*padding: 4em 1em;*/
 }
@@ -30,31 +30,50 @@ header {
 
 #nav {
 	position: fixed;
-	height: 3em;
+	height: 3.5em;
 	top: 0;
 	width: 100%;
 	opacity: 0.95;
 	font-weight:bold;
 	background: #F15025;
-	padding: 0.4em 2em 0.2em 2em;
+	padding: 0 2em 0 2em;
 	color: white;
 	display: flex;
 	flex-direction: row;
+	list-style: none;
 }
 
 #nav > * {
-	align-self: center;
 	margin-left: 1.5em;
 }
 
 #nav-links a {
-	color: #191919;
-	margin-right: 1em;
+	display: table-cell;
+  	vertical-align: middle;
+	color: white;
+}
+
+ul#nav-links {
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+#nav-links li {
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	display: table;
+	float: left;
+	height: 100%;
+}
+
+#nav-links li.active {
+	background-color: #F28060;
 }
 
 #nav-logo a img {
+	margin-top: 0.4em;
 	height: 2.9em;
-	
 }
 
 footer {
