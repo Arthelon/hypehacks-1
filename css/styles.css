@@ -1,22 +1,15 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background-color: white;
 	line-height: 1.5;
 	font-size: 16px;
 	margin: 0;
-	color: #191919;
+	color: #FF5C26;
 }
 
 a {
 	text-decoration: none;
-}
-
-footer {
-	height: 300px;
-	width: 100%;
-	bottom: 0;
-	display: block;
-	background-color: #F94D1D;
+	color: white;
 }
 
 button {
@@ -92,16 +85,22 @@ ul#nav-links {
 /** Header **/
 
 header {
+	text-align: center;
 	margin-top: 3.6em;
-	height: 800px;
+	height: 720px;
 	background: white;
 	display: block;
 }
 
 header img {
-	margin: 5em auto 2em auto;
+	margin: 4em auto 0em auto;
 	width: 60%;
 	display: block;
+}
+
+header h1 {
+	font-size: 72px;
+	margin: 0 0 0.3em 0;
 }
 
 header button {
@@ -123,4 +122,34 @@ section {
 .alt-section {
 	background-color: #E6E8E6;
 }
+
+/** Footer **/
+footer {
+	height: 150px;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	background-color: #F94D1D;
+	padding-left: 2em;
+	padding-right: 2em;
+	justify-content: space-between;
+}
+
+footer p {
+	display: block;
+	align-self: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer #footer-buttons {
+	align-self: center;
+}
+
+footer #footer-buttons a {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
 
