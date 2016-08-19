@@ -13,9 +13,9 @@ p {
 	font-size: 18px;
 }
 
-a {
+a, b {
 	text-decoration: none;
-	color: white;
+	color: #FF5C26;
 }
 
 h1, h2, h3, h4 {
@@ -28,6 +28,12 @@ h3 {
 
 h2 {
 	font-size: 2.5em;
+}
+
+.faq-item {
+	padding-left: 2em;
+	padding-right: 2em;
+	display: table;
 }
 
 button {
@@ -141,8 +147,28 @@ section {
 	background-color: #E6E8E6;
 }
 
-section#faq h3, section#faq p {
+section#faq {
+	padding: 1em 8em 3em 8em;
+}
+
+section#faq p, section#faq h3 {
 	text-align: left;
+}
+
+#faq-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+section#faq #finalFAQ p, section#faq #finalFAQ h3 {
+	text-align: center !important;
+}
+
+#faq-col-1, #faq-col-2 {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
 }
 
 /** Footer **/
@@ -172,6 +198,7 @@ footer #footer-buttons {
 footer #footer-buttons a {
 	margin-right: 1em;
 	margin-left: 1em;
+	color: white;
 }
 
 
